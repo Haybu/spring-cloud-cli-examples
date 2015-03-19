@@ -14,4 +14,9 @@ class App {
 		helloHelper.getMessage()
 	}
 
+	@RequestMapping("/x")
+	def hellox() {
+		helloHelper.getStuff()
+	}
+
 }

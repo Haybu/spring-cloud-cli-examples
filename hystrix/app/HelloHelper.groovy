@@ -13,8 +13,22 @@ class HelloHelper {
 		rest.getForObject("http://HelloService/hello", String.class)
 	}
 
+	@HystrixCommand(fallbackMethod = "getMoreStuff")
+	def getStuff() {
+		throw new Exception("Oops");
+	}
+
+	@HystrixCommand(fallbackMethod = "anotherFallback")
+	def getMoreStuff() {
+		throw new Exception("Oops");
+	}
+
 	def defaultMessage() {
 		"What happened?"
+	}
+
+	def anotherFallback() {
+		"Huh?"
 	}
 
 }

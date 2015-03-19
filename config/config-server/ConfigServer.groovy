@@ -1,4 +1,3 @@
 @Configuration
 @EnableConfigServer
-class ConfigServer {
-}
+class ConfigServer {}

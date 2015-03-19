@@ -35,7 +35,7 @@ $ cd app
 $ spring run .
 ```
 
-At this point, everything should work much like the "discovery" example. However, you can point your web browser to http://localhost:8080/hystrix to monitor the health of the one Hystrix command that the project contains. The more requests you make to http://localhost:8080, the more activity you'll see in the dashboard.
+At this point, everything should work much like the "discovery" example. However, you can point your web browser to http://localhost:8989/hystrix to monitor the health of the one Hystrix command that the project contains. The more requests you make to http://localhost:8080, the more activity you'll see in the dashboard.
 
 Where it gets interesting is if the Hystrix command fails. You can make it fail by stopping the service application and then making requests to http://localhost:8080. Unable to consume the message from the service, the circuit will be open and the fallback method will be called (returning "What happened?" as the response). Also, you'll notice the failure rate climbing in the Hystrix dashboard.
 
