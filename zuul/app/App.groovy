@@ -1,0 +1,5 @@
+@EnableDiscoveryClient
+@EnableZuulProxy
+class App {
+
+}

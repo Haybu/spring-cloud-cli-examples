@@ -1,0 +1,4 @@
+@EnableEurekaServer
+class DiscoveryServer {
+
+}
