@@ -3,11 +3,6 @@ server:
 eureka:
   instance:
     hostname: localhost
-
----
-spring:
-  profiles: standalone
-eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false

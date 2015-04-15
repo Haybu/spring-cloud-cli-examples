@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<title>Zuul sample app</title>
+
+		<link rel="import" href="bower_components/polymer/polymer.html">
+
+	</head>	
+
+	<body>
+		<h2>Zuul sample app</h2>
+		<core-ajax url="/hello" auto response="{{resp}}"></core-ajax>
+    	<textarea value="{{resp}}"></textarea>
+	</body>
+</html>
