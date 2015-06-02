@@ -10,5 +10,5 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 
 turbine:
-  appConfig: mainapp
+  appConfig: mainapp,mainapp2,mainapp3
   clusterNameExpression: "'default'"

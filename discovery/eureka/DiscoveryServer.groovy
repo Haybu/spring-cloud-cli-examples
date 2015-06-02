@@ -1,4 +1,3 @@
 @EnableEurekaServer
 class DiscoveryServer {
-
 }
